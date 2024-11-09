@@ -7,7 +7,7 @@ export function Header({ showDescription }: HeaderProps) {
     <>
       <header className="flex flex-col gap-6 pt-12">
         <div className="flex flex-row justify-between items-center">
-          <a href="/">
+          <a href="/eadafonso">
             <h1 className="font-medium text-2xl hover:opacity-70">Eadafonso</h1>
           </a>
 
