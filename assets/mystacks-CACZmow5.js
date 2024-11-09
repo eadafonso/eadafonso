@@ -1,4 +1,4 @@
-import{j as e}from"./index-DTy_K_cv.js";function o(s){const a={code:"code",p:"p",pre:"pre",...s.components};return e.jsxs("div",{className:"flex flex-col gap-4 pb-10",children:[e.jsx("h2",{className:"font-semibold",children:"Minha stack para desenvolvimento Front-End"})," ",e.jsx("span",{className:"tracking-normal text-slate-700",children:e.jsxs(a.p,{children:[`Ao longo do tempo, experimentei várias tecnologias e metodologias, e hoje
+import{j as e}from"./index-ChOY_RHo.js";function o(s){const a={code:"code",p:"p",pre:"pre",...s.components};return e.jsxs("div",{className:"flex flex-col gap-4 pb-10",children:[e.jsx("h2",{className:"font-semibold",children:"Minha stack para desenvolvimento Front-End"})," ",e.jsx("span",{className:"tracking-normal text-slate-700",children:e.jsxs(a.p,{children:[`Ao longo do tempo, experimentei várias tecnologias e metodologias, e hoje
 encontrei uma stack que me permite construir aplicações robustas e de alto
 desempenho. Neste artigo, compartilho meu stack de ferramentas favoritas e por
 que escolho cada uma delas. E sim, eu sou team`," ",`
