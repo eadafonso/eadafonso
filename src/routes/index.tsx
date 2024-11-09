@@ -9,8 +9,8 @@ export function RoutesConfig() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/posts/:slug" element={<Posts />} />
+        <Route path="/eadafonso" element={<Home />} />
+        <Route path="/eadafonso/posts/:slug" element={<Posts />} />
       </Routes>
     </BrowserRouter>
   );

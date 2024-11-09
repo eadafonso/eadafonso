@@ -13,7 +13,7 @@ export default function Home() {
           {posts.map((post, index) => (
             <li key={index}>
               <a
-                href={`/posts/${post.slug}`}
+                href={`/eadafonso/posts/${post.slug}`}
                 className="text-[15px] text-blue-600 font-medium"
               >
                 - {post.title}
