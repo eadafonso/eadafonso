@@ -1,4 +1,4 @@
-import{j as e}from"./index-CqFI4o8M.js";function i(s){const a={p:"p",...s.components};return e.jsxs("div",{className:"flex flex-col gap-4",children:[e.jsx("h2",{className:"font-semibold",children:"1- O Verdadeiro Papel do Front-End: Muito Além das Telas Bonitas"})," ",e.jsx("span",{className:"tracking-normal text-slate-700",children:e.jsx(a.p,{children:`Quando pensamos em desenvolvimento front-end, é comum imaginar que a principal
+import{j as e}from"./index-D6AOd5Ft.js";function i(s){const a={p:"p",...s.components};return e.jsxs("div",{className:"flex flex-col gap-4",children:[e.jsx("h2",{className:"font-semibold",children:"1- O Verdadeiro Papel do Front-End: Muito Além das Telas Bonitas"})," ",e.jsx("span",{className:"tracking-normal text-slate-700",children:e.jsx(a.p,{children:`Quando pensamos em desenvolvimento front-end, é comum imaginar que a principal
 responsabilidade é criar interfaces visuais, elementos bonitos e atrativos
 para os utilizadores. Contudo, o front-end vai muito além de simples telas
 estéticas; o seu verdadeiro propósito é criar experiências de utilizador
