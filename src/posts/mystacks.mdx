@@ -1,0 +1,83 @@
+<div className="flex flex-col gap-4">
+  <h2 className="font-semibold">Minha stack para desenvolvimento Front-End</h2>
+
+{" "}
+<span className="text-sm tracking-normal text-slate-700">
+  Ao longo do tempo, experimentei várias tecnologias e metodologias, e hoje
+  encontrei uma stack que me permite construir aplicações robustas e de alto
+  desempenho. Neste artigo, compartilho meu stack de ferramentas favoritas e por
+  que escolho cada uma delas. E sim, eu sou team{" "}
+  <a className="text-blue-600 font-semibold" href="https://react.dev/">React.</a>
+</span>
+
+{" "}
+<h3 className="font-medium">1.Framework (Next.Js)</h3>
+<span className="text-sm tracking-normal text-slate-700">
+  O <a className="text-blue-600 font-semibold" href="https://nextjs.org/">Next.js</a> não só facilita o desenvolvimento de aplicações React com
+  renderização no servidor, mas também permite a criação de APIs integradas.
+  Além disso, ele oferece suporte a Server Components, o que permite buscar e
+  renderizar dados no lado do servidor com maior eficiência, melhorando a
+  experiência do usuário.
+</span>
+
+{" "}
+<h3 className="font-medium">1.1.Vite</h3>
+<span className="text-sm tracking-normal text-slate-700">
+  Em projectos onde o uso de um framework completo não é necessário, escolho o
+  Vite. <a className="text-blue-600 font-semibold" href="https://vite.dev/">O Vite</a> é uma ferramenta de construção rápida e eficiente, projectada
+  para melhorar a experiência de desenvolvimento com tempos de compilação
+  reduzidos. Ele é excelente para projetos menores ou que requerem uma
+  configuração mais leve.
+</span>
+
+  <h3 className="font-medium">2.Busca de dados</h3>
+  
+  <span className="text-sm tracking-normal text-slate-700">
+  Para buscar dados, uso diferentes abordagens dependendo do tipo de projeto: 
+  </span>
+  <ul>
+    <li className="text-sm text-slate-700"><strong>- Server Components no Next.js:</strong> Quando uso Next.js, a maioria dos dados a busca é feita no lado do servidor através 
+    dos Server Components. Essa abordagem melhora o desempenho da aplicação e reduz a quantidade de código JavaScript enviado 
+    ao cliente.</li> <br />
+
+    
+
+    <pre>
+    ```javascript
+      export default async function Page() {
+        let data = await fetch('https://api.app/posts')
+        let posts = await data.json()
+        return (
+          <ul>
+            {posts.map((post) => (
+              <li key={post.id}>{post.title}</li>
+            ))}
+          </ul>
+        )
+      }
+    ```
+    </pre>
+
+    <br />
+
+    <li className="text-sm text-slate-700"><strong>- React Query para busca no cliente: </strong> Para projectos em Vite ou mesmo em Next.js, quando preciso fazer buscas de dados no lado do cliente, React Query é a biblioteca de escolha. 
+    Ela facilita gerenciar cache, estados de carregamento, e actualizações automáticas de dados, melhora a performance da aplicação e 
+    oferece uma experiência de usuário mais fluida.</li>
+  </ul>
+
+  <h3 className="font-medium">3.Estilização: Tailwind CSS e Shadcn UI</h3>
+<span className="text-sm tracking-normal text-slate-700">
+  Para o design e estilização, utilizo uma combinação de <a href="https://tailwindcss.com/" className="text-blue-600 font-medium">Tailwind CSS</a> e <a href="https://ui.shadcn.com/" className="text-blue-600 font-medium">Shadcn UI</a>. O Tailwind CSS é um framework de utilidades que me permite criar 
+  componentes estilizados rapidamente, com classes que facilitam o controle detalhado sobre o layout e estilos. <br /> <br /> Já o Shadcn UI oferece uma coleção de 
+  componentes prontos e personalizáveis que se integram muito bem ao Tailwind CSS, acelerando o desenvolvimento sem comprometer a flexibilidade no design.
+</span>
+
+  <h3 className="font-medium">4.Outras:</h3>
+  <div className="flex flex-col gap-3">
+  <span><strong>Autenticação:</strong> <a href="https://firebase.google.com/docs/auth" className="text-blue-600 font-medium">Firebase Authentication</a></span>
+  <span><strong>Storage:</strong> <a href="https://firebase.google.com/docs/storage" className="text-blue-600 font-medium">Firebase Storage</a></span>
+  <span><strong>Base de dados:</strong> <a href="https://www.postgresql.org/" className="text-blue-600 font-medium">PostgreSQL</a></span>
+  <span><strong>ORM:</strong> <a href="https://www.prisma.io/" className="text-blue-600 font-medium">Prisma</a></span>
+  </div>
+
+</div>
