@@ -1,4 +1,3 @@
-import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -15,11 +14,10 @@ export default function Posts() {
   }, [slug]);
 
   return (
-    <main className="max-w-[60ch] mx-auto w-full space-y-6 h-[100vh]">
+    <main className="max-w-[60ch] mx-auto w-full space-y-6 h-[100vh] px-7 lg:p-0">
       <Header showDescription={false} />
 
       <MDXProvider>{Content ? <Content /> : <p>A carregar ...</p>}</MDXProvider>
-      <Footer />
     </main>
   );
 }

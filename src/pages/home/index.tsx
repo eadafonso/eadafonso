@@ -1,16 +1,15 @@
-import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { posts } from "../../data";
 
 export default function Home() {
   return (
     <>
-      <main className="max-w-[60ch] mx-auto w-full space-y-6 h-[100vh]">
+      <main className="max-w-[60ch] mx-auto w-full space-y-6 h-[100vh] px-7 lg:p-0">
         <Header showDescription={true} />
 
         <h4 className="font-medium text-[16px]">Últimos artigos</h4>
 
-        <ul className="h-[70vh] flex flex-col gap-5">
+        <ul className="flex flex-col gap-5">
           {posts.map((post, index) => (
             <li key={index}>
               <a
@@ -22,8 +21,6 @@ export default function Home() {
             </li>
           ))}
         </ul>
-
-        <Footer />
       </main>
     </>
   );
